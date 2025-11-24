@@ -1,0 +1,35 @@
+.lang-icons{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.lang-icon{
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
+	padding:8px 12px;
+	border-radius:10px;
+	background:rgba(255,255,255,0.02);
+	border:1px solid rgba(255,255,255,0.03);
+	color:var(--muted);
+	font-weight:700;
+	font-size:13px;
+	box-shadow: 0 6px 18px rgba(2,6,23,0.12);
+}
+.lang-icon i{ width:20px; height:20px; display:inline-block; }
+
+/* subtle hover */
+.lang-icon:hover, .lang-icon:focus{
+	transform: translateY(-4px);
+	box-shadow: 0 12px 28px rgba(2,6,23,0.16);
+	transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+/* Light theme adjustments to keep contrast */
+body.light .lang-icon{
+	background:rgba(2,6,23,0.03);
+	border-color:rgba(2,6,23,0.04);
+	color:var(--muted);
+	box-shadow: 0 6px 14px rgba(2,6,23,0.04);
+}
+
+/* responsive spacing */
+@media (max-width:560px){
+	.lang-icon{ padding:8px 10px; font-size:12px }
+}
