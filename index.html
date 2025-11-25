@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -10,8 +11,11 @@
 	<link rel="stylesheet" href="Style/footer.css">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Inter:wght@300;400;600&display=swap"
+		rel="stylesheet">
 </head>
+
 <body>
 	<header class="header" role="banner">
 		<div class="brand">
@@ -31,12 +35,14 @@
 				<div style="display:inline-flex;align-items:center;gap:8px">
 					<a href="#about" class="nav-link">About</a>
 
-					<button id="helpBtn" class="help-btn" title="About this site" aria-haspopup="dialog" aria-controls="helpModal">
+					<button id="helpBtn" class="help-btn" title="About this site" aria-haspopup="dialog"
+						aria-controls="helpModal">
 						<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 						<span class="sr-only">Help</span>
 					</button>
 
-					<button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">
+					<button id="themeToggle" class="theme-toggle" aria-pressed="false"
+						aria-label="Toggle light and dark theme">
 						<i class="fa-solid fa-sun" aria-hidden="true"></i>
 						<i class="fa-solid fa-moon" aria-hidden="true"></i>
 					</button>
@@ -47,49 +53,41 @@
 
 	<main>
 		<section id="home" class="section hero" aria-labelledby="home-heading">
-			<div class="intro" id="intro-block">
-				<div class="intro-content">
-					<h1 id="home-heading" class="intro-title">
-						<span class="intro-title-gradient">Ric Villanueva</span>
-					</h1>
-					<h2 class="intro-sub">"Behind every click is a passion for computers."</h2>
+			<div class="hero-content">
+				<div class="hero-text">
+					<h3 class="hero-greeting">Hello, I'm</h3>
+					<h1 id="home-heading" class="hero-title">Ric Villanueva</h1>
+					<h2 class="hero-subtitle">Junior Analyst & Developer</h2>
 
-					<p class="intro-copy">I’m a BSIT graduate (Business Analytics) and a junior developer focused on creating accessible, engaging and performant web experiences.</p>
-					<p class="intro-copy muted">Below are my projects and a little about who I am.</p>
+					<p class="hero-description">I’m a BSIT graduate (Business Analytics) and a junior developer focused
+						on creating accessible, engaging and performant web experiences.</p>
 
-					<div class="cta">
-						<a class="btn has-slide" href="#projects">View Projects</a>
-						<a class="link-ghost has-slide" href="#about">About me</a>
+					<div class="hero-socials">
+						<a href="#contact-section" class="connect-btn">STAY CONNECTED</a>
+					</div>
+
+
+					<div class="hero-stats">
+						<div class="stat-item">
+							<span class="stat-num">4+</span>
+							<span class="stat-label">Years of Academic Experience</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-num">6+</span>
+							<span class="stat-label">Projects Completed</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-num">4+</span>
+							<span class="stat-label">Team Projects & Collaborations</span>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="profile-card-wrap">
-				<div class="profile-card" role="region" aria-label="Profile card">
-					<div class="profile-avatar" aria-hidden="true">
-						<img src="Style/assets/selfImg.png" alt="Ric Villanueva">
-					</div>
-					<div class="profile-role"><u>Junior Developer / Analyst</u></div>
-					<br>
-					<p class="profile-desc">Open to collaboration and freelance projects. <br> Improving processes through thoughtful development.</p>
-					<div class="profile-contact" aria-label="Contact details">
-						<span class="contact-item">
-							<i class="fa-solid fa-phone" aria-hidden="true"></i>
-							(+63)956 390 2628
-						</span>
-						<span class="contact-item">
-							<i class="fa-solid fa-envelope" aria-hidden="true"></i>
-							<a href="https://mail.google.com/mail/?view=cm&fs=1&to=villanuevaric12@gmail.com" target="_blank" rel="noopener noreferrer">
-								villanuevaric12@gmail.com
-							</a>
-						</span>
-					</div>
+				<div class="hero-image-wrapper">
+					<div class="hero-image-bg"></div>
+					<img src="Style/assets/self_portfolio.png" alt="Ric Villanueva" class="hero-img">
 				</div>
 			</div>
-		</section>
-
-		<section class="section">
-			<div class="divider"></div>
 		</section>
 
 		<section id="projects" class="section" aria-labelledby="projects-heading">
@@ -97,7 +95,9 @@
 				<i class="fa-solid fa-layer-group" aria-hidden="true"></i>
 				Projects
 			</h2>
-			<p class="small" style="margin-top:6px;margin-bottom:18px;color:var(--muted)">An overview of the projects and experiences I worked on throughout my college journey, showing how I grew my skills in development and turned ideas into working systems.</p>
+			<p class="small" style="margin-top:6px;margin-bottom:18px;color:var(--muted)">An overview of the projects
+				and experiences I worked on throughout my college journey, showing how I grew my skills in development
+				and turned ideas into working systems.</p>
 
 			<div class="projects-grid">
 				<article class="project-card" role="article"
@@ -108,7 +108,8 @@
 						<span class="project-year">2025</span>
 					</div>
 					<h3>Suistanable Assessment Tool 2: SDG Monitoring System</h3>
-					<p class="project-card__summary">A web-based system for BSU Campus that tracks and monitors sustainability metrics to help organizations evaluate their progress toward the UN SDGs.</p>
+					<p class="project-card__summary">A web-based system for BSU Campus that tracks and monitors
+						sustainability metrics to help organizations evaluate their progress toward the UN SDGs.</p>
 					<ul class="project-tags" aria-label="Tech stack">
 						<li>PHP</li>
 						<li>Descriptive Analysis</li>
@@ -119,7 +120,8 @@
 							<i class="fa-solid fa-images" aria-hidden="true"></i>
 							View gallery
 						</button>
-						<a class="project-github-btn has-slide" href="https://github.com/example/analytics-center" target="_blank" rel="noopener noreferrer">
+						<a class="project-github-btn has-slide" href="https://github.com/example/analytics-center"
+							target="_blank" rel="noopener noreferrer">
 							<i class="fa-brands fa-github" aria-hidden="true"></i>
 							GitHub
 						</a>
@@ -134,7 +136,8 @@
 						<span class="project-year">2024</span>
 					</div>
 					<h3>Cafe: Point of Sale System</h3>
-					<p class="project-card__summary">A simple and efficient POS system designed for cafés to manage orders, sales, and inventory in one platform.</p>
+					<p class="project-card__summary">A simple and efficient POS system designed for cafés to manage
+						orders, sales, and inventory in one platform.</p>
 					<ul class="project-tags" aria-label="Tech stack">
 						<li>PHP</li>
 						<li>Bootstrap 5</li>
@@ -145,7 +148,8 @@
 							<i class="fa-solid fa-images" aria-hidden="true"></i>
 							View gallery
 						</button>
-						<a class="project-github-btn has-slide" href="https://github.com/example/portfolio-platform" target="_blank" rel="noopener noreferrer">
+						<a class="project-github-btn has-slide" href="https://github.com/example/portfolio-platform"
+							target="_blank" rel="noopener noreferrer">
 							<i class="fa-brands fa-github" aria-hidden="true"></i>
 							GitHub
 						</a>
@@ -160,7 +164,8 @@
 						<span class="project-year">2024</span>
 					</div>
 					<h3>Lift I.T. Up: Registration System</h3>
-					<p class="project-card__summary">A user-friendly registration system for Lipa Gym that streamlines membership sign-ups.</p>
+					<p class="project-card__summary">A user-friendly registration system for Lipa Gym that streamlines
+						membership sign-ups.</p>
 					<ul class="project-tags" aria-label="Tech stack">
 						<li>PHP</li>
 						<li>Text Blast</li>
@@ -171,7 +176,8 @@
 							<i class="fa-solid fa-images" aria-hidden="true"></i>
 							View gallery
 						</button>
-						<a class="project-github-btn has-slide" href="https://github.com/example/ops-automation" target="_blank" rel="noopener noreferrer">
+						<a class="project-github-btn has-slide" href="https://github.com/example/ops-automation"
+							target="_blank" rel="noopener noreferrer">
 							<i class="fa-brands fa-github" aria-hidden="true"></i>
 							GitHub
 						</a>
@@ -186,7 +192,8 @@
 						<span class="project-year">2023</span>
 					</div>
 					<h3>Abu's Resort: Appointment System</h3>
-					<p class="project-card__summary">Appointment system for Abu's Resort & Catering that allows to conveniently schedule resort bookings while helping staff manage reservations efficiently.</p>
+					<p class="project-card__summary">Appointment system for Abu's Resort & Catering that allows to
+						conveniently schedule resort bookings while helping staff manage reservations efficiently.</p>
 					<ul class="project-tags" aria-label="Tech stack">
 						<li>Python</li>
 						<li>PostgreSQL</li>
@@ -196,7 +203,8 @@
 							<i class="fa-solid fa-images" aria-hidden="true"></i>
 							View gallery
 						</button>
-						<a class="project-github-btn has-slide" href="https://github.com/example/devops-pulse" target="_blank" rel="noopener noreferrer">
+						<a class="project-github-btn has-slide" href="https://github.com/example/devops-pulse"
+							target="_blank" rel="noopener noreferrer">
 							<i class="fa-brands fa-github" aria-hidden="true"></i>
 							GitHub
 						</a>
@@ -222,7 +230,8 @@
 							<i class="fa-solid fa-images" aria-hidden="true"></i>
 							View gallery
 						</button>
-						<a class="project-github-btn has-slide" href="https://github.com/example/learnflow-hub" target="_blank" rel="noopener noreferrer">
+						<a class="project-github-btn has-slide" href="https://github.com/example/learnflow-hub"
+							target="_blank" rel="noopener noreferrer">
 							<i class="fa-brands fa-github" aria-hidden="true"></i>
 							GitHub
 						</a>
@@ -248,7 +257,8 @@
 							<i class="fa-solid fa-images" aria-hidden="true"></i>
 							View gallery
 						</button>
-						<a class="project-github-btn has-slide" href="https://github.com/example/servicelink-mobile" target="_blank" rel="noopener noreferrer">
+						<a class="project-github-btn has-slide" href="https://github.com/example/servicelink-mobile"
+							target="_blank" rel="noopener noreferrer">
 							<i class="fa-brands fa-github" aria-hidden="true"></i>
 							GitHub
 						</a>
@@ -257,7 +267,8 @@
 			</div>
 		</section>
 
-		<div class="project-modal hidden" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" aria-hidden="true">
+		<div class="project-modal hidden" id="projectModal" role="dialog" aria-modal="true"
+			aria-labelledby="projectModalTitle" aria-hidden="true">
 			<div class="project-modal__dialog">
 				<button class="project-modal__close" type="button" data-project-modal-close aria-label="Close gallery">
 					<i class="fa-solid fa-xmark" aria-hidden="true"></i>
@@ -276,7 +287,8 @@
 							<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
 						</button>
 					</div>
-					<div class="project-carousel__dots" id="projectCarouselDots" role="tablist" aria-label="Project screenshots"></div>
+					<div class="project-carousel__dots" id="projectCarouselDots" role="tablist"
+						aria-label="Project screenshots"></div>
 				</div>
 			</div>
 		</div>
@@ -284,106 +296,192 @@
 		<section id="about" class="section" aria-labelledby="about-heading">
 			<h2 id="about-heading" class="section-title">
 				<i class="fa-solid fa-id-card" aria-hidden="true"></i>
-				About
+				About Me
 			</h2>
 
-			<div class="about-content">
-				<div class="about-bio">
-					<p class="small">I’m Ric Villanueva, a BSIT — Business Analytics graduate who loves transforming messy requirements into thoughtful digital experiences.</p>
-					<p class="small">Currently based in the Philippines, I focus on crafting performant web apps, data dashboards, and tools that help teams make better decisions.</p>
-
-					<ul class="about-details" aria-label="Quick facts">
-						<li><i class="fa-solid fa-user-astronaut" aria-hidden="true"></i> Junior Developer & Analyst</li>
-						<li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> BS Information Technology (Business Analytics)</li>
-						<li><i class="fa-solid fa-school" aria-hidden="true"></i>Batangas State University - TNEU Lipa Campus</li>
-					</ul>
+			<div class="about-container">
+				<!-- Bio & Intro -->
+				<div class="about-intro">
+					<p class="about-text">
+						I’m Ric Villanueva, a BSIT — Business Analytics graduate who loves transforming messy
+						requirements into thoughtful digital experiences.
+						Currently based in the Philippines, I focus on crafting performant web apps, data dashboards,
+						and tools that help teams make better decisions.
+					</p>
 				</div>
 
-				<div class="skills-grid" aria-label="Skills and tools">
-					<div class="skill-group">
-						<div class="skill-group__title">
-							<i class="fa-solid fa-code" aria-hidden="true"></i>
-							Frontend
+				<!-- Skills / Tech Stack Section -->
+				<div class="skills-section">
+					<h3 class="subsection-title">Technologies I Use</h3>
+					<div class="tech-grid">
+						<!-- App Dev -->
+						<div class="tech-item" title="React Native">
+							<i class="fa-brands fa-react"></i>
+							<span>React Native</span>
 						</div>
-						<div class="skill-group__chips">
-							<span class="skill-chip"><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML</span>
-							<span class="skill-chip"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS</span>
-							<span class="skill-chip"><i class="fa-brands fa-square-js" aria-hidden="true"></i>JavaScript</span>
+						<div class="tech-item" title="Node.js">
+							<i class="fa-brands fa-node-js"></i>
+							<span>Node.js</span>
 						</div>
-					</div>
 
-					<div class="skill-group">
-						<div class="skill-group__title">
-							<i class="fa-solid fa-server" aria-hidden="true"></i>
-							Backend
+						<!-- Backend & DB -->
+						<div class="tech-item" title="PHP">
+							<i class="fa-brands fa-php"></i>
+							<span>PHP</span>
 						</div>
-						<div class="skill-group__chips">
-							<span class="skill-chip"><i class="fa-brands fa-php" aria-hidden="true"></i>PHP</span>
-							<span class="skill-chip"><i class="fa-brands fa-react" aria-hidden="true"></i>React Native</span>
-							<span class="skill-chip"><i class="fa-brands fa-python" aria-hidden="true"></i>Python</span>
-							<span class="skill-chip"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Colab</span>
+						<div class="tech-item" title="PostgreSQL">
+							<i class="fa-solid fa-database"></i>
+							<span>PostgreSQL</span>
 						</div>
-					</div>
+						<div class="tech-item" title="phpMyAdmin">
+							<i class="fa-solid fa-server"></i>
+							<span>phpMyAdmin</span>
+						</div>
 
-					<div class="skill-group">
-						<div class="skill-group__title">
-							<i class="fa-solid fa-database" aria-hidden="true"></i>
-							Databases
+						<!-- Tools & Others -->
+						<div class="tech-item" title="Google Colab">
+							<i class="fa-brands fa-google"></i>
+							<span>Google Colab</span>
 						</div>
-						<div class="skill-group__chips">
-							<span class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i>MySQL</span>
-							<span class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i>PostgreSQL</span>
-							<span class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i>phpMyAdmin</span>
+						<div class="tech-item" title="Hostinger">
+							<i class="fa-solid fa-cloud-arrow-up"></i>
+							<span>Hostinger</span>
 						</div>
-					</div>
-
-					<div class="skill-group">
-						<div class="skill-group__title">
-							<i class="fa-solid fa-toolbox" aria-hidden="true"></i>
-							Other Skills
-						</div>
-						<div class="skill-group__chips">
-							<span class="skill-chip"><i class="fa-brands fa-figma" aria-hidden="true"></i>Figma</span>
-							<span class="skill-chip"><i class="fa-solid fa-palette" aria-hidden="true"></i>Canva</span>
-							<span class="skill-chip"><i class="fa-solid fa-file-excel" aria-hidden="true"></i>Excel</span>
-							<span class="skill-chip"><i class="fa-solid fa-file-word" aria-hidden="true"></i>Word</span>
+						<div class="tech-item" title="SMTP Integration">
+							<i class="fa-solid fa-envelope-open-text"></i>
+							<span>SMTP / Email</span>
 						</div>
 					</div>
 				</div>
-			</div>
+
+				<!-- Two Column Layout: Timeline & Services -->
+				<div class="about-grid">
+
+					<!-- Timeline Column -->
+					<div class="about-col">
+						<h3 class="subsection-title">My Journey</h3>
+						<div class="timeline">
+							<div class="timeline-item">
+								<div class="timeline-marker"></div>
+								<div class="timeline-content">
+									<span class="timeline-year">2026</span>
+									<h4 class="timeline-title">Graduated BSIT</h4>
+									<p class="timeline-desc">Completed Bachelor of Science in Information Technology
+										(Business Analytics) at Batangas State University - TNEU Lipa Campus.</p>
+								</div>
+							</div>
+							<div class="timeline-item">
+								<div class="timeline-marker"></div>
+								<div class="timeline-content">
+									<span class="timeline-year">2024</span>
+									<h4 class="timeline-title">Freelance Developer</h4>
+									<p class="timeline-desc">Started taking on freelance projects, building POS systems
+										and registration platforms for local businesses.</p>
+								</div>
+							</div>
+							<div class="timeline-item">
+								<div class="timeline-marker"></div>
+								<div class="timeline-content">
+									<span class="timeline-year">2021</span>
+									<h4 class="timeline-title">Started Coding Journey</h4>
+									<p class="timeline-desc">Enrolled in college and began learning the fundamentals of
+										programming and web development.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Services Column -->
+					<div class="about-col">
+						<h3 class="subsection-title">What I Do</h3>
+						<div class="services-grid">
+							<div class="service-card">
+								<div class="service-icon">
+									<i class="fa-solid fa-code"></i>
+								</div>
+								<h4 class="service-title">Web Development</h4>
+								<p class="service-desc">Building responsive and performant web applications using modern
+									technologies like HTML, CSS, JavaScript, and PHP.</p>
+							</div>
+
+							<div class="service-card">
+								<div class="service-icon">
+									<i class="fa-solid fa-chart-line"></i>
+								</div>
+								<h4 class="service-title">Data Analytics</h4>
+								<p class="service-desc">Transforming raw data into actionable insights for business
+									growth using Python, SQL, and Excel.</p>
+							</div>
+
+							<div class="service-card">
+								<div class="service-icon">
+									<i class="fa-solid fa-pen-ruler"></i>
+								</div>
+								<h4 class="service-title">UI/UX Design</h4>
+								<p class="service-desc">Designing intuitive and accessible user interfaces with a focus
+									on user experience using Figma.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 		</section>
 
-		<footer class="footer" role="contentinfo">
+		<footer class="footer" id="contact-section" role="contentinfo">
 			<div class="footer-brand">
-				<img src="Style/assets/dark_logo.png" alt="Logo" class="footer-logo" data-footer-logo />
-				<div>
-					<div class="footer-name">Ric Villanueva</div>
-					<div class="footer-tag">Code & Analytics</div>
+				<div class="footer-content">
+					<!-- Brand / Logo Section -->
+					<div class="footer-brand">
+						<div>
+							<img src="Style/assets/dark_logo.png" alt="Logo" class="brand-logo" data-brand-logo />
+						</div>
+						<h3 class="footer-name">Ric Villanueva</h3>
+						<p class="footer-role">Junior Analyst & Developer</p>
+					</div>
+
+					<!-- Address / Contact Section -->
+					<div class="footer-contact">
+						<h4 class="footer-heading">Contact Info</h4>
+						<div class="contact-item">
+							<i class="fa-solid fa-location-dot"></i>
+							<span>Batangas, Philippines</span>
+						</div>
+						<div class="contact-item">
+							<i class="fa-solid fa-envelope"></i>
+							<a href="mailto:villanuevaric12@gmail.com">villanuevaric12@gmail.com</a>
+						</div>
+						<div class="contact-item">
+							<i class="fa-solid fa-phone"></i>
+							<span>(+63) 956 390 2628</span>
+						</div>
+					</div>
+
+					<!-- Socials Section -->
+					<div class="footer-socials">
+						<h4 class="footer-heading">Find Me On</h4>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/Squidy12Mojo" target="_blank" aria-label="Facebook"
+								class="social-box">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/ric-vincent-villanueva-923936387/" target="_blank"
+								aria-label="LinkedIn" class="social-box">
+								<i class="fa-brands fa-linkedin-in"></i>
+							</a>
+							<a href="https://github.com/Ric0612" target="_blank" aria-label="GitHub" class="social-box">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:16px">
-				<div class="small">Connect with me:</div>
-				<div class="socials" role="navigation" aria-label="Social links">
-					<a class="icon-btn has-slide" href="https://www.facebook.com/Squidy12Mojo" target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook
-					</a>
-
-					<a class="icon-btn has-slide" href="https://www.linkedin.com/in/ric-vincent-villanueva-923936387/" target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
-					</a>
-
-					<a class="icon-btn has-slide" href="https://github.com/Ric0612" target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
-					</a>
+				<div class="footer-bottom">
+					<div class="small">&copy; <span id="year"></span> Ric Villanueva. All rights reserved.</div>
 				</div>
-			</div>
-
-			<div class="small">&copy; <span id="year"></span> All rights reserved.</div>
 		</footer>
 	</main>
 
-	<div id="helpModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-hidden="true">
+	<div id="helpModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="helpTitle"
+		aria-hidden="true">
 		<div class="modal" role="document">
 			<header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
 				<h3 id="helpTitle">About this portfolio</h3>
@@ -393,8 +491,10 @@
 				</button>
 			</header>
 			<div>
-				<p>This site serves as my personal portfolio, featuring my projects and background. It uses a responsive layout, smooth navigation, and animation.</p>
-				<p>Feel free to explore using the top navigation, and connect with me through the links in the footer.</p>
+				<p>This site serves as my personal portfolio, featuring my projects and background. It uses a responsive
+					layout, smooth navigation, and animation.</p>
+				<p>Feel free to explore using the top navigation, and connect with me through the links in the footer.
+				</p>
 
 				<div class="lang-icons" aria-hidden="false" style="margin-top:14px">
 					<div class="lang-icon" title="HTML5">
@@ -418,4 +518,5 @@
 
 	<script src="Js/portfolio.js"></script>
 </body>
+
 </html>
