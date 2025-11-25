@@ -17,6 +17,14 @@
 </head>
 
 <body>
+	<script>
+		if (!sessionStorage.getItem("loadedOnce")) {
+			sessionStorage.setItem("loadedOnce", "true");
+			window.location.replace("loading.html");
+		}
+	</script>
+
+
 	<header class="header" role="banner">
 		<div class="brand">
 			<img src="Style/assets/dark_logo.png" alt="Logo" class="brand-logo" data-brand-logo />
